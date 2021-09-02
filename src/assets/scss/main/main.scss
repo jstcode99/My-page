@@ -1,0 +1,136 @@
+body{
+  background: #0a192f;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #0a192f;
+}
+body::-webkit-scrollbar-thumb {
+  border: 3px solid $dark;
+  border-radius: 10px;
+  background: #0a192f;
+}
+.app {
+  width: 100% !important;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+.typewriter div {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.navbar {
+  box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+  backdrop-filter: blur(10px);
+}
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin-left: 2%;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.skills-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  li span{
+    color: $white;
+  }
+}
+.item-head {
+  color: $success;
+}
+.text-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+}
+@media (max-width: 1080px) {
+  .text-heading::after {
+      width: 250px;
+  }
+}
+.text-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 1px;
+  margin-left: 20px;
+  background-color: $success;
+}
+.console {
+  margin-top: 15%;
+  border-color: #333333;
+  border-radius: 18px;
+  border: 1px;
+  z-index: 10;
+  box-shadow: 0px 4px 3px 5px #333333;
+  // box-shadow: #333333;
+}
+.experiences {
+  padding: 25% 0 25% 0;
+}
+.b-card-dark {
+  background-color: transparent !important;
+  .card-body {
+    padding: 0 !important;
+  }
+}
+.tab-experiences {
+  .nav-item {
+    border: 0;
+    .nav-link {
+      border: 0;
+      border-radius: 0px;
+      border-left: 2px solid $gray !important;
+      color: $gray;
+      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);;
+    }
+    .active {
+      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+      -webkit-box-align: center;
+      border-left: 2px solid $green !important;
+      background-color: transparent;
+      color: $green !important;
+    }
+  }
+  .card-header {
+    padding: 0 !important;
+  }
+}
+.panel-content-experiences:focus {
+  outline: 2px dashed $green;
+  outline-offset: 3px;
+}
+.company {
+  a {
+    color: $white;
+  }
+  a:hover {
+    color: $green;
+    outline: 0px;
+  }
+}

@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      <navbar />
+      <router-view/>
+      <floting-vertical-links v-bind:links="linksSocialIcons" v-bind:orientation="orientationSocialIcons"/>
+      <floting-vertical-links v-bind:links="linksWebPage" v-bind:orientation="orientationWebPage"/>
+    </b-container>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from '@/components/Navbar/Navbar.vue'
+import FlotingVerticalLinks from '@/components/FlotingVerticalLinks/FlotingVerticalLinks.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      orientationSocialIcons: 'orientation__left',
+      linksSocialIcons: [
+        {
+          route: '/',
+          text: '',
+          icon: 'facebook',
+        },
+        {
+          route: '/',
+          text: '',
+          icon: 'github',
+        },
+        {
+          route: '/',
+          text: '',
+          icon: 'linkedin',
+        }
+      ],
+      orientationWebPage: 'orientation__right',
+      linksWebPage: [
+        {
+          route: '/',
+          text: 'http://localhost:8080/#/',
+          icon: '',
+        }
+      ]
+    }
+  },
   components: {
-    HelloWorld
-  }
+    Navbar,
+    FlotingVerticalLinks,
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,6 @@
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import './assets/scss/vendors/bootstrap-vue/customs-vars.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+@import './assets/scss/main/main.scss';
