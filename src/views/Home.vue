@@ -17,8 +17,9 @@
           <cardlanding />
         </b-col>
       </b-row>
-      <About />
-      <Experiences />
+      <About/>
+      <Experiences/>
+      <Proyects/>
   </div>
 </template>
 
@@ -28,15 +29,16 @@ import Brandname from '@/components/BrandName/BrandName.vue'
 import Cardlanding from '@/components/CardLanding/Cardlanding.vue'
 import About from '@/components/About.vue'
 import Experiences from '@/components/Experiences.vue'
-
+import Proyects from '@/components/Proyects/Proyects.vue'
 
 export default {
   name: 'Home',
   components: {
-    Cardlanding,
     Brandname,
+    Cardlanding,
     About,
     Experiences,
+    Proyects,
   }
 }
 </script>

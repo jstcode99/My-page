@@ -1,0 +1,29 @@
+.console {
+  border-color: #333333;
+  border-radius: 18px;
+  border: 1px;
+  z-index: 10;
+  box-shadow: 0px 4px 3px 5px #333333;
+  /* // box-shadow: #333333; */
+}
+.skills-list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  li span{
+    color: $white;
+  }
+}
+.item-head {
+  color: $success;
+}
+@media (min-width: 992px) {
+  .console {
+    margin: 5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .console {
+    margin: 5rem !important;
+  }
+}

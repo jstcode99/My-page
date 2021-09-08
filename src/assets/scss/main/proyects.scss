@@ -1,0 +1,162 @@
+.continer-section-proyect {
+  position: relative;
+  display: grid;
+  margin: 5rem;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  :nth-of-type(2n+1) .section-info {
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+  :nth-of-type(2n+1) .section-img {
+    grid-column: 1 / 8;
+  }
+  .section-img {
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    .img-presentation-proyect {
+      border-radius: 4px;
+      mix-blend-mode: multiply;
+      height: 337px;
+      box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
+    }
+    .b-skeleton-img {
+      height: calc(100% - 10px);
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background-color: #676c6f;
+      vertical-align: middle;
+    }
+    div:hover, :active {
+      background-color: transparent;
+    }
+    div::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      z-index: 3;
+      transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    }
+  }
+  .section-info {
+    grid-column: 7 / -1;
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+    z-index: 99;
+    .card {
+      background-color: #112240;
+    }
+  }
+}
+.tech-info{
+  justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 15px 0px 10px;
+  padding: 0px;
+  list-style: none;
+  li {
+    margin: 0px 0px 5px 20px;
+  }
+}
+
+.continer-gallery {
+  margin: 5rem;
+  width: 100%;
+
+  .row-gallery {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column-gallery {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+  }
+  
+  
+  .column-gallery img {
+    filter: grayscale(0);
+    transition: .3s;
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+    width: 100%;
+  }
+  .gallery__caption {
+		left: 0px;
+    position: relative;
+		width: 100%;
+    top: 0;
+		font-family: 'Raleway', sans-serif;
+    padding: 10px 2px 0px;
+		font-size: 16px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+  }
+  .container-image:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .gallery__caption {
+		  opacity: 1;
+      transform: scale(1.1);
+    }
+    // box-shadow: 8px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+@media (max-width: 1280px) {
+  .continer-section-proyect {
+    margin: 5rem;
+  }
+}
+@media (max-width: 992px) {
+  .continer-section-proyect {
+    margin: 5rem;
+    display: inherit;
+  }
+}
+@media (max-width: 320px) {
+  .continer-section-proyect {
+    margin: 0.1rem;
+    display: inherit;
+  }
+  .continer-gallery {
+    margin: 2rem 1rem 5rem 0rem;
+    .column-gallery {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

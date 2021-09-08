@@ -12,7 +12,7 @@
   >
     <b-row>
       <b-col cols="12" xl="12">
-        <h1 class="text-heading text-monospace">.Mis Experiencias</h1>
+        <h3 class="text-heading text-monospace">.Mis Experiencias</h3>
       </b-col>
       <b-col cols="12" xl="12">
         <b-card class="b-card-dark">
@@ -89,7 +89,7 @@ export default {
           fullname: 'Pegasus Software',
           firstDateContrat: '25-05-2019',
           lastDateContrat: '27-09-2019',
-          tasks: 'Trabaje en el equipo de desarrollo de la plataforma Académica Web 2.0 en la cual realice el trabajo de actualización de modulo creados en flash y modificados y actualizados haciendo uso de las tecnologías web (PHP, JS, CSS) y gestión de datos en MariaDB, cree informes específicos para la plataforma con el uso de TPCPDF y diseñe módulos de correspondencia a correo y teléfono haciendo uso de API Rest.',
+          tasks: 'Trabajé en el equipo de desarrollo de la plataforma Académica Web 2.0 en la cual realice el trabajo de actualización de modulo creados en flash y modificados y actualizados haciendo uso de las tecnologías web (PHP, JS, CSS) y gestión de datos en MariaDB, cree informes específicos para la plataforma con el uso de TPCPDF y diseñe módulos de correspondencia a correo y teléfono haciendo uso de API Rest.',
           webPage: 'https://web.colpegasus.com/',
           workPosition: 'Desarrollador Web',
         },

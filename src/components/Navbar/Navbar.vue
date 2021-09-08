@@ -2,7 +2,16 @@
   <div>
   <b-navbar toggleable="lg" type="dark" class="fixed-top" v-show="showNavbar" >
     <b-navbar-brand class="typewriter" to="/">
-      <div class="text-monospace">Juan Sebastian T.</div>
+      <div class="text-monospace text-truncate">
+        <b-img
+          rounded
+          :src="appLogoImage"
+          :alt="nameApp"
+          class="logo-img"
+        >
+        </b-img>
+        <span>{{ nameApp }}</span>
+      </div>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -29,7 +38,15 @@ export default {
     return {
       showNavbar: true,
       lastScrollPosition: 0,
-      scrollValue: 0
+      scrollValue: 0,
+      nameApp: 'Juan Sebastian',
+      appLogoImage: require('@/assets/img/logo/Logo-blanco.png'),
+      imgProps: {
+        blank: true,
+        blankColor: '#bbb',
+        width: 42,
+        height: 42,
+      }
     }
   },
 
