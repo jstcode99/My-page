@@ -1,14 +1,6 @@
 <template lang="">
   <div
-      class="py-3 continer-section-proyect"
-      data-aos="fade-up"
-      data-aos-offset="100"
-      data-aos-delay="50"
-      data-aos-duration="3000"
-      data-aos-easing="ease-in-right"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
+      class="continer-section-proyect"
     >
     <div class="section-info">
       <b class="text-success">Proyecto destacado</b>

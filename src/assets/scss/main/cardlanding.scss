@@ -1,8 +1,36 @@
 .card-landing {
   color: #fff;
   overflow: hidden;
-  margin-top: 40%;
-  margin-left: 16%;
+  margin-top: 30%;
+  margin-left: 18%;
+  .card {
+    border: 1px solid #202637;
+    background-color: #112240;
+  }
+  .form-img {
+    top: 0;
+    margin: 10rem ;
+    position: absolute;
+    width: 150px;
+    transform: rotate(70deg);
+  }
+}
+.form-contac {
+  .form-control{
+    border: 0;
+    background-color: #0c162d;
+    overflow-y: hidden;
+  }
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0;
+  }
+  .btn-contact {
+    margin-top: 2.2rem !important;
+  }
 }
 .title__cardlanding {
   font-size: 2rem;
@@ -12,23 +40,57 @@
   text-align: left;
   text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 411px) {
   .card-landing {
-    margin: 10rem 2rem;
-    .btn-primary{
-      margin-left: 32% !important;
-    }
-    .btn-warning{
-      margin-left: 25% !important;
+    .form-img {
+      top: 05rem;
+      margin: 10rem ;
+      position: absolute;
+      width: 150px;
+      transform: rotate(70deg);
     }
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .card-landing {
-    margin: 1rem 1rem;
+    margin: 23rem 1rem 0rem 2rem !important;
+    .form-img {
+      margin: 10rem 3rem 0rem 9rem ;
+      width: 80px;
+      transform: rotate(20deg);
+    }
+  }
+  .title__cardlanding {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+  .btn-primary {
+    margin-left: 2rem !important;
+  } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card-landing {
+    margin: 20rem 1rem 0rem 2rem !important
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card-landing {
+    margin: 30rem 8rem 0rem 8rem !important;
+    .form-img {
+      margin: 20rem 3rem 0rem 9rem ;
+      width: 120px;
+      transform: rotate(62deg);
+    }
   }
   .card-landing .btn-primary{
-    margin-left: 32%;
+    margin-left: 45%;
+  }
+  .card-landing .btn-warning{
+    margin-left: 43%;
   }
   .title__cardlanding {
     font-size: 2rem;
@@ -38,14 +100,31 @@
     text-align: center;
     text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
   }
-}
-@media (min-width: 992px) {
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .card-landing {
-    margin: 8rem 1rem;
+    margin: 17rem 0rem 0rem 1rem !important;
+        .form-img {
+      margin: 10rem 3rem 0rem 9rem ;
+      width: 120px;
+      transform: rotate(62deg);
+    }
   }
-}
-@media (min-width: 1280px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   .card-landing {
-    margin: 20rem 5rem 0rem 0rem;
+    margin: 18.5rem 5rem 0rem 0rem !important;
+    .form-img {
+      margin: 10rem 3rem 0rem 9rem ;
+      width: 120px;
+      transform: rotate(62deg);
+    }
+  }
+  .btn{
+    align-items: center;
   }
 }

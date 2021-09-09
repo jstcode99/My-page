@@ -24,17 +24,17 @@ export default {
       orientationSocialIcons: 'orientation__left',
       linksSocialIcons: [
         {
-          route: '/',
+          route: 'https://www.facebook.com/sebastianblack1696/',
           text: '',
           icon: 'facebook',
         },
         {
-          route: '/',
+          route: 'https://github.com/jstcode99',
           text: '',
           icon: 'github',
         },
         {
-          route: '/',
+          route: 'www.linkedin.com/in/juan-sebastian-torres',
           text: '',
           icon: 'linkedin',
         }
@@ -42,8 +42,8 @@ export default {
       orientationWebPage: 'orientation__right',
       linksWebPage: [
         {
-          route: '/',
-          text: 'http://localhost:8080/#/',
+          route: 'http://sebastian-dev.tech/',
+          text: 'http://sebastian-dev.tech/',
           icon: '',
         }
       ]

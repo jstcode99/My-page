@@ -1,7 +1,7 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="dark" class="fixed-top" v-show="showNavbar" >
-    <b-navbar-brand class="typewriter" to="/">
+  <b-navbar toggleable="lg" variant="dark" type="dark" class="fixed-top" v-show="showNavbar" >
+    <b-navbar-brand href="#home">
       <div class="text-monospace text-truncate">
         <b-img
           rounded
@@ -18,14 +18,42 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
         <b-navbar-nav>
-          <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="About">Perfil</b-nav-item>
-          <b-nav-item to="About">Contacto</b-nav-item>
+          <b-nav-item
+            :class="isActive('home') ? 'active' : ''"
+            @click="active = 'home'"
+            href="#home"
+          >
+            Home
+          </b-nav-item>
+          <b-nav-item
+            :class="isActive('about') ? 'active' : ''"
+            @click="active = 'about'"
+            href="#about"
+          >
+            Perfil
+          </b-nav-item>
+          <b-nav-item
+            :class="isActive('contact') ? 'active' : ''"
+            @click="active = 'contact'"
+            href="#contact"
+          >
+            Contacto
+          </b-nav-item>
+          <b-nav-item
+            :class="isActive('experiences') ? 'active' : ''"
+            @click="active = 'experiences'"
+            href="#experiences"
+          >
+            Experiencia
+          </b-nav-item>
+          <b-nav-item
+            :class="isActive('proyects') ? 'active' : ''"
+            @click="active = 'proyects'"
+            href="#proyects"
+          >
+            Proyectos
+          </b-nav-item>
         </b-navbar-nav>
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item to="#">EN</b-dropdown-item>
-          <b-dropdown-item to="#">ES</b-dropdown-item>
-        </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -36,11 +64,12 @@ export default {
   name: 'Navbar',
   data () {
     return {
+      active: 'home',
       showNavbar: true,
       lastScrollPosition: 0,
       scrollValue: 0,
       nameApp: 'Juan Sebastian',
-      appLogoImage: require('@/assets/img/logo/Logo-blanco.png'),
+      appLogoImage: require('@/assets/img/logo/sebastian-dev.png'),
       imgProps: {
         blank: true,
         blankColor: '#bbb',
@@ -49,7 +78,6 @@ export default {
       }
     }
   },
-
   mounted () {
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)
@@ -64,6 +92,9 @@ export default {
   },
 
   methods: {
+    isActive(tag){
+      return tag === this.active
+    },
     onScroll () {
       if (window.pageYOffset < 0) {
         return

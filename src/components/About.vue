@@ -1,31 +1,17 @@
 <template>
-  <div
-    data-aos="fade-right"
-    data-aos-offset="150"
-    data-aos-delay="100"
-    data-aos-duration="5000"
-    data-aos-easing="ease-in-right"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center"
-  >
-    <div class="console p-4 m-4">
+  <div>
+    <div class="console p-4 m-5">
       <b-row>
         <b-col cols="12">
           <h3 class="text-heading text-monospace text-success">.Perfil</h3>
           <p class="text-white">
-              Hola Soy
-              <span class="text-primary">Sebastian Torres</span>
-              Mi intereses por el desarrollado web empezó a eso del 
-              <span class="text-primary">2016 </span> y desde entonces aprendo cada día de esta linda carrera.
-              Actualmente vivo en Colombia mi pais natal, he trabajado desde el <span class="text-success">2019</span> como desarrollador web para diferentes empresas 
-              desde empresas de salud hasta empresas del sector educativo como desarrollador web y cargos afines.
+            Hola, te cuento un poco de mi, desde el 2016 estoy en el mundo de la programación y el desarrollo de software y desde entonces aprendo cada día de esta linda carrera. Actualmente vivo en Colombia mi país natal, he trabajado desde el 2019 como desarrollador web para diferentes empresas desde empresas de salud hasta empresas del sector educativo como desarrollador web y cargos afines.
           </p>
         </b-col>
         <b-col cols="12">
           <h3 class="text-monospace text-success">.Perfil técnico</h3>
           <p class="text-white">
-            Con que herramientas y lenguajes trabajo?, comúnmente hago uso de Frameworks de desarrollo por escalabilidad y por el tiempo, aun que también desarrollo de forma vanila, estas son algunas de las tecnologías en las que trabajo
+            ¿Con qué herramientas y lenguajes trabajo? Actualmente me encuentro desenvolviendome en entornos Web, haciendo uso de todo tipo de herramientas y tecnologías que  ayudan a generar herramientas increíbles, estas son algunas de las tecnologías que he aprendido y me desenvuelvo.
           </p>
         </b-col>
         <b-col cols="12">

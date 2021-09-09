@@ -1,17 +1,11 @@
 <template>
-  <div class="title-brand">
+  <div class="title-brand" data-aos="fade-right">
     <h1 class="title__text fadeIn">Juan<br>Sebas<span style="text-decoration:underline">tian</span></h1>
-    <p class="title__subtext text-white fadeIn">Desarollador Web / Estudiante Ing Sistemas.</p>
-    <Animations img="astronaut" ></Animations>
+    <p class="title__subtext fadeIn">Construyendo sitios y herramientas increíbles para personas increíbles!</p>
   </div>
 </template>
 <script>
-import Animations from '@/components/animations/animations'
-
 export default {
   name: 'Brandname',
-    components: {
-    Animations,
-  }
 }
 </script>
