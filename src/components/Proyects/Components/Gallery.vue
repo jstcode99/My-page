@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div class="container-image">
     <b-img :src="gallery.img" class="gallery__image"></b-img>
     <div class="gallery__caption">{{ gallery.title }}</div>

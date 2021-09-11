@@ -1,11 +1,12 @@
 <template>
-  <div>
+  <div id="perfil">
     <div class="console p-4 m-5">
       <b-row>
         <b-col cols="12">
-          <h3 class="text-heading text-monospace text-success">.Perfil</h3>
+          <h3 class="text-heading text-monospace text-success">.Desarrollador Web</h3>
           <p class="text-white">
             Hola, te cuento un poco de mi, desde el 2016 estoy en el mundo de la programación y el desarrollo de software y desde entonces aprendo cada día de esta linda carrera. Actualmente vivo en Colombia mi país natal, he trabajado desde el 2019 como desarrollador web para diferentes empresas desde empresas de salud hasta empresas del sector educativo como desarrollador web y cargos afines.
+            Tambien me encanta diseñar y soy apasionado por la usabilidad y mejores prácticas en desarrollo de páginas web y aplicaciones, como desarrollador mantengo un enfoque de transparencia con los servicios y productos contratados por mis clientes.
           </p>
         </b-col>
         <b-col cols="12">

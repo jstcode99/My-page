@@ -34,7 +34,7 @@ export default {
           icon: 'github',
         },
         {
-          route: 'www.linkedin.com/in/juan-sebastian-torres',
+          route: 'https://linkedin.com/in/juan-sebastian-torres',
           text: '',
           icon: 'linkedin',
         }

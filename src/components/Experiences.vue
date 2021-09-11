@@ -1,8 +1,8 @@
 <template>
-  <div class="experiences" id="experiences">
+  <div class="experiences" id="experiencia">
     <b-row>
       <b-col cols="12" xl="12">
-        <h3 class="text-heading text-monospace">.Mis Experiencias</h3>
+        <h3 class="text-heading text-monospace">.Empresas para las que he desarrollado</h3>
       </b-col>
       <b-col cols="12" xl="12">
         <b-card class="b-card-dark">

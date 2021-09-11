@@ -1,16 +1,15 @@
 <template>
   <div
-    id="contact"
+    id="contacto"
     class="card-landing"
     :class="statusSendEmail ? 'vibration' : ''"
   >
-      <b-img class="form-img" :src="require('@/assets/img/animations/cohete.png')" />
+      <b-img class="form-img" :src="require('@/assets/img/animations/cohete.webp')" />
       <b-card class="">
         <b-card-text>
           <div class="typewriter">
             <p class="typing">!Bienvenido, Listo para explorar</p>
             <p class="typing">mi portafolio¡</p>
-            <p>{{ statusSendEmail }} | {{ statusOk }}</p>
           </div>
           <hr>
           <b-form

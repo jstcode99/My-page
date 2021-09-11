@@ -10,18 +10,21 @@
       </b-row>
       <Animations data-aos="fade-right" img="astronaut"></Animations>
       <Animations data-aos="fade-left"  img="earth"></Animations>
-      <span id="about"></span>
       <About data-aos="fade-up"/>
+      <Services data-aos="fade-right"></Services>
+      <Gallery data-aos="fade-left"></Gallery>
       <Experiences data-aos="fade-dow"/>
       <Proyects data-aos="fade-up"/>
   </div>
 </template>
 
 <script>
+import Gallery from '../components/Gallery/Gallery.vue'
+import Services from '../components/services/Services.vue'
 // @ is an alias to /src
 import Brandname from '@/components/BrandName/BrandName.vue'
 import Cardlanding from '@/components/CardLanding/Cardlanding.vue'
-import Animations from '../components/animations/animations'
+import Animations from '../components/animations/animations.vue'
 import About from '@/components/About.vue'
 import Experiences from '@/components/Experiences.vue'
 import Proyects from '@/components/Proyects/Proyects.vue'
@@ -29,6 +32,8 @@ import Proyects from '@/components/Proyects/Proyects.vue'
 export default {
   name: 'Home',
   components: {
+    Gallery,
+    Services,
     Brandname,
     Cardlanding,
     Animations,

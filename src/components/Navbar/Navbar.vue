@@ -23,33 +23,33 @@
             @click="active = 'home'"
             href="#home"
           >
-            Home
+            Inicio
           </b-nav-item>
           <b-nav-item
             :class="isActive('about') ? 'active' : ''"
             @click="active = 'about'"
-            href="#about"
+            href="#perfil"
           >
             Perfil
           </b-nav-item>
           <b-nav-item
             :class="isActive('contact') ? 'active' : ''"
             @click="active = 'contact'"
-            href="#contact"
+            href="#contacto"
           >
             Contacto
           </b-nav-item>
           <b-nav-item
             :class="isActive('experiences') ? 'active' : ''"
             @click="active = 'experiences'"
-            href="#experiences"
+            href="#experiencia"
           >
             Experiencia
           </b-nav-item>
           <b-nav-item
             :class="isActive('proyects') ? 'active' : ''"
             @click="active = 'proyects'"
-            href="#proyects"
+            href="#proyectos"
           >
             Proyectos
           </b-nav-item>
@@ -69,7 +69,7 @@ export default {
       lastScrollPosition: 0,
       scrollValue: 0,
       nameApp: 'Juan Sebastian',
-      appLogoImage: require('@/assets/img/logo/sebastian-dev.png'),
+      appLogoImage: require('@/assets/img/logo/sebastian-dev.webp'),
       imgProps: {
         blank: true,
         blankColor: '#bbb',

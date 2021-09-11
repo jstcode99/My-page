@@ -2,7 +2,9 @@
   <div class="proyects">
     <b-row>
       <b-col cols="12">
-        <h3 class="text-heading text-monospace text-success" id="proyects">.Proyectos</h3>
+        <h3 class="text-heading text-monospace text-success" id="proyectos">.Proyectos desarrollados</h3>
+        <p class="text-white font-italic">Estos son algunos de los proyectos que he desarrollado para las empresas</p>
+        <hr>
       </b-col>
       <b-col
         v-for="(proyect, index) in proyects"
@@ -38,7 +40,7 @@ export default {
             'MySql (Maria DB)',
             'Bootstrap v3.'
           ],
-          img: require('@/assets/img/proyects/Hottur.png'),
+          img: require('@/assets/img/proyects/Hottur.webp'),
         },
                 {
           title: 'Sistema de control de procesos juridicos',
@@ -54,7 +56,7 @@ export default {
             'MySql (Maria DB)',
             'Bootstrap v3.'
           ],
-          img: require('@/assets/img/proyects/Juris.png'),
+          img: require('@/assets/img/proyects/Juris.webp'),
         },
                 {
           title: 'Sigma',
@@ -69,39 +71,39 @@ export default {
             'MySql (Maria DB)',
             'Vue-Bootstrap.'
           ],
-          img: require('@/assets/img/proyects/sigma.png'),
+          img: require('@/assets/img/proyects/sigma.webp'),
         },
       ],
-      gallerys: [
-        {
-          title: 'Email Marketing',
-          img: require('@/assets/img/gallery/email-templates.png'),
-        },
-        {
-          title: 'Email Web',
-          img: require('@/assets/img/gallery/gestion-de-base-de-datos.png'),
-        },
-        {
-          title: 'Diseño de Apps',
-          img: require('@/assets/img/gallery/apps-dising.png'),
-        },
-        {
-          title: 'Prototipos de Apps',
-          img: require('@/assets/img/gallery/prototipos-mobiles.png'),
-        },
-        {
-          title: 'Diseño Web',
-          img: require('@/assets/img/gallery/fincarraiz-vaness.png'),
-        },
-        {
-          title: 'Diseño Web a la medida',
-          img: require('@/assets/img/gallery/fincarraiz-vaness-2.png'),
-        },
-        {
-          title: 'Email Web',
-          img: require('@/assets/img/gallery/email-templates-2.png'),
-        },
-      ]
+      // gallerys: [
+      //   {
+      //     title: 'Email Marketing',
+      //     img: require('@/assets/img/gallery/email-templates.webp'),
+      //   },
+      //   {
+      //     title: 'Email Web',
+      //     img: require('@/assets/img/gallery/gestion-de-base-de-datos.webp'),
+      //   },
+      //   {
+      //     title: 'Diseño de Apps',
+      //     img: require('@/assets/img/gallery/apps-dising.webp'),
+      //   },
+      //   {
+      //     title: 'Prototipos de Apps',
+      //     img: require('@/assets/img/gallery/prototipos-mobiles.webp'),
+      //   },
+      //   {
+      //     title: 'Diseño Web',
+      //     img: require('@/assets/img/gallery/fincarraiz-vaness.webp'),
+      //   },
+      //   {
+      //     title: 'Diseño Web a la medida',
+      //     img: require('@/assets/img/gallery/fincarraiz-vaness-2.webp'),
+      //   },
+      //   {
+      //     title: 'Email Web',
+      //     img: require('@/assets/img/gallery/email-templates-2.webp'),
+      //   },
+      // ]
     }
   },
 }

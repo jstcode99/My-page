@@ -16,26 +16,26 @@ export default {
   data() {
     return {
       imgs: [
-        {
-          name: 'asteriod',
-          img: require('@/assets/img/animations/asteriod.png'),
-        },
+        // {
+        //   name: 'asteriod',
+        //   img: require('@/assets/img/animations/asteriod.webp'),
+        // },
         {
           name: 'astronaut',
-          img: require('@/assets/img/animations/astronaut.png'),
+          img: require('@/assets/img/animations/astronaut.webp'),
         },
         {
           name: 'earth',
-          img: require('@/assets/img/animations/earth.png'),
+          img: require('@/assets/img/animations/earth.webp'),
         },
-        {
-          name: 'marth',
-          img: require('@/assets/img/animations/marth.png'),
-        },
-        {
-          name: 'saturn',
-          img: require('@/assets/img/animations/saturn.png'),
-        },
+        // {
+        //   name: 'marth',
+        //   img: require('@/assets/img/animations/marth.webp'),
+        // },
+        // {
+        //   name: 'saturn',
+        //   img: require('@/assets/img/animations/saturn.webp'),
+        // },
       ],
     }
   },
@@ -144,8 +144,8 @@ export default {
 
 @media only screen and (min-width: 1200px) {
   .astronaut{
-    left: 0rem;
-    top: 21rem;
+    left: 6rem;
+    top: 26rem;
     img {
       opacity: 0.8;
       width: 350px;

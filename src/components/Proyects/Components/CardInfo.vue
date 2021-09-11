@@ -1,7 +1,5 @@
-<template lang="">
-  <div
-      class="continer-section-proyect"
-    >
+<template>
+  <div class="continer-section-proyect">
     <div class="section-info">
       <b class="text-success">Proyecto destacado</b>
       <h3>{{ proyect.title }}</h3>
@@ -29,6 +27,8 @@
             v-if="!loading"
             :src="proyect.img"
             fluid-grow
+            width="1920"
+            height="1080"
             class="img-presentation-proyect"
             :alt="proyect.title"
           />

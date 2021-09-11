@@ -53,6 +53,11 @@ body::-webkit-scrollbar-thumb {
   margin: 10px 0px 30px;
   width: 100%;
 }
+.carousel-radius {
+  *.carousel-inner {
+    border-radius: 15px !important;
+  }
+}
 @media (max-width: 1080px) {
   .text-heading::after {
       width: 250px;
@@ -62,7 +67,7 @@ body::-webkit-scrollbar-thumb {
   content: "";
   display: block;
   position: relative;
-  width: 80%;
+  width: 50%;
   height: 1px;
   margin-left: 20px;
   background-color: $success;
