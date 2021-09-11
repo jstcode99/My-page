@@ -1,4 +1,8 @@
 // Define variable defaults
+@font-face {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+}
 $blue: #007bff;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -29,7 +33,7 @@ $font-family: Raleway, sans-serif;
 $body-color: #ffffff;
 $color: #ffffff;
 $btn-border-radius: 14px;
-$list-group-bg: #0a192f;
+$list-group-bg: #112240;
 
 // sm: 540px,
 // md: 720px,

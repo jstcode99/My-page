@@ -21,28 +21,28 @@
           <b-nav-item
             :class="isActive('home') ? 'active' : ''"
             @click="active = 'home'"
-            href="#home"
+            href="/#home"
           >
             Inicio
           </b-nav-item>
           <b-nav-item
             :class="isActive('about') ? 'active' : ''"
             @click="active = 'about'"
-            href="#perfil"
+            href="/#perfil"
           >
             Perfil
           </b-nav-item>
           <b-nav-item
             :class="isActive('contact') ? 'active' : ''"
             @click="active = 'contact'"
-            href="#contacto"
+            href="/contacto"
           >
             Contacto
           </b-nav-item>
           <b-nav-item
             :class="isActive('experiences') ? 'active' : ''"
             @click="active = 'experiences'"
-            href="#experiencia"
+            href="/#experiencia"
           >
             Experiencia
           </b-nav-item>

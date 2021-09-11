@@ -42,8 +42,8 @@ export default {
       orientationWebPage: 'orientation__right',
       linksWebPage: [
         {
-          route: 'http://sebastian-dev.tech/',
-          text: 'http://sebastian-dev.tech/',
+          route: 'https://Sebastian-dev.tech/',
+          text: 'Sebastian-dev.tech/',
           icon: '',
         }
       ]

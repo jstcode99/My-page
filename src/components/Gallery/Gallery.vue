@@ -8,7 +8,7 @@
     >
       <div class="">
         <h3 class="text-success text-center p-2">
-          Muestras de proyectos realizados
+          Muestra de proyectos realizados
         </h3>
       </div>
     </b-col>
