@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar toggleable="lg" variant="dark" type="dark" class="fixed-top" v-show="showNavbar" >
-    <b-navbar-brand href="#home">
+    <b-navbar-brand href="/#home">
       <div class="text-monospace text-truncate">
         <b-img
           rounded
@@ -35,7 +35,7 @@
           <b-nav-item
             :class="isActive('contact') ? 'active' : ''"
             @click="active = 'contact'"
-            href="/contacto"
+            to="/contacto"
           >
             Contacto
           </b-nav-item>

@@ -2,7 +2,7 @@
   <div>
     <ul class="floting__vertial__link fadeUp" :class="orientation">
       <li v-for="(link, index) in links" :key="index">
-        <a :href="link.route">
+        <a :href="link.route" :target="link.target">
           <span v-if="link.text">{{ link.text }}</span>
           <b-icon 
             v-if="link.icon"

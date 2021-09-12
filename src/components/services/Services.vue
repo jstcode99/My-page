@@ -84,7 +84,7 @@
                 block
                 class="mt-2"
                 variant="outline-success"
-                :to="`https://wa.me/${phoneWhatsApp}/?text=${pricing.whatsAppMessage}`"
+                :href="`https://wa.me/${phoneWhatsApp}/?text=${pricing.whatsAppMessage}`"
               >
                 Saber más
               </b-button>
@@ -110,7 +110,7 @@
               <b-button
                 variant="primary"
                 class="mt-2 mt-lg-3"
-                :to="`https://wa.me/${phoneWhatsApp}/?text=Hola!, Estoy interesado es solicitar otro tipo de servicio.`"
+                :href="`https://wa.me/${phoneWhatsApp}/?text=Hola!, Estoy interesado es solicitar otro tipo de servicio.`"
 
               >
                 ¡Contactar ahora!

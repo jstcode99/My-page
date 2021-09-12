@@ -27,16 +27,19 @@ export default {
           route: 'https://www.facebook.com/sebastianblack1696/',
           text: '',
           icon: 'facebook',
+          target: '_blank'
         },
         {
           route: 'https://github.com/jstcode99',
           text: '',
           icon: 'github',
+          target: '_blank'
         },
         {
           route: 'https://linkedin.com/in/juan-sebastian-torres',
           text: '',
           icon: 'linkedin',
+          target: '_blank'
         }
       ],
       orientationWebPage: 'orientation__right',
@@ -45,6 +48,7 @@ export default {
           route: 'https://Sebastian-dev.tech/',
           text: 'Sebastian-dev.tech/',
           icon: '',
+          target: '_self'
         }
       ]
     }

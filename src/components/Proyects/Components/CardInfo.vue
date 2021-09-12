@@ -22,7 +22,7 @@
     <div class="section-img">
       <small v-show="loading">loading...</small>
       <div>
-        <a :href="proyect.link" tarjet="_blank">
+        <a>
           <b-img
             v-if="!loading"
             :src="proyect.img"
