@@ -1,10 +1,10 @@
 <template>
-  <b-container>
+  <div>
       <navbar />
       <router-view/>
       <floting-vertical-links v-bind:links="linksSocialIcons" v-bind:orientation="orientationSocialIcons"/>
       <floting-vertical-links v-bind:links="linksWebPage" v-bind:orientation="orientationWebPage"/>
-  </b-container>
+  </div>
   <!-- <Animations img="astronaut" ></Animations> -->
 </template>
 <script>

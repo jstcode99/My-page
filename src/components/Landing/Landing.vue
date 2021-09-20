@@ -1,137 +1,29 @@
 <template>
   <b-row id="contacto">
-    <b-col sm="12" md="12" lg="6" xl="6" id="home">
-        <div class="title-brand" data-aos="fade-right">
+    <div id="home">
+      <div class="background-overlay">
+        <div class="title-brand" data-aos="fade-down">
           <h1 class="title__text fadeIn text-uppercase">sebastian<br>Torres</h1>
-          <h3 class="fadeIn text-uppercase">desarrollador web</h3>
+          <h3 class="fadeIn text-uppercase text-center">desarrollador web</h3>
           <p class="title__subtext text-success fadeIn">Construyendo sitios y herramientas increíbles para personas increíbles!</p>
-          <b-button
-            variant="light font-weight-bold text-uppercase text-dark"
-            @click="showForm = !showForm"
-          >
-            Conctactar
-          </b-button>
-        </div>
-    </b-col>
-    <b-col sm="12" md="12" lg="5" xl="5">
-      <div 
-        v-show="!showForm"
-        class="animation"
-        data-aos="fade-right"
-      >
-        <b-img width="100%" :src="require('@/assets/img/animations/DesarrolladorWeb.webp')" />
-      </div>
-      <div
-        v-show="showForm"
-        class="card-landing"
-        :class="statusSendEmail ? 'vibration' : ''"
-      >
-        <b-card>
-          <b-card-text>
-            <div class="typewriter">
-              <p class="typing">!Bienvenido, Listo para explorar</p>
-              <p class="typing">mi portafolio, contáctame aquí!</p>
-            </div>
-            <hr>
-            <b-form
-              class="form-contac"
-              @submit.stop.prevent="onSubmit"
+          <div class="container-buttoms text-center">
+            <a
+              class="btn btn-dark font-weight-bold text-uppercase text-light"
+              @click="showForm = !showForm"
             >
-              <b-row>
-                <b-col cols="12">
-                  <label>Nombre</label>
-                  <b-form-input
-                    id="name"
-                    name="name"
-                    ref="name"
-                    v-model="form.name"
-                    @focus="focusNow = 'name'"
-                    :state="validateState('name', 'required')"
-                    class="border-dark bg-dark text-success"
-                    placeholder="Nombre"
-                    aria-describedby="input-name"
-                    data-vv-as="Name"
-                  />
-                  <b-form-invalid-feedback id="input-name">El Nombre es obligatorio</b-form-invalid-feedback>
-                </b-col>
-                <b-col
-                  cols="12"
-                >
-                  <label>Teléfono</label>
-                  <b-form-input
-                    id="phone"
-                    name="phone"
-                    ref="phone"
-                    v-model="form.phone"
-                    @focus="focusNow = 'phone'"
-                    :state="validateState('phone', 'required')"
-                    class="border-dark bg-dark text-success"
-                    placeholder="Teléfono"
-                    aria-describedby="input-phone"
-                    data-vv-as="Phone"
-                  />
-                  <b-form-invalid-feedback id="input-phone">El Teléfono es obligatorio</b-form-invalid-feedback>
-                </b-col>
-                <b-col
-                  cols="12"
-                >
-                  <label>Correo</label>
-                  <b-form-input
-                    id="email"
-                    name="email"
-                    ref="email"
-                    v-model="form.email"
-                    @focus="focusNow = 'email'"
-                    :state="validateState('email', 'required')"
-                    class="border-dark bg-dark text-success"
-                    placeholder="Correo"
-                    aria-describedby="input-email"
-                    data-vv-as="Email"
-                  />
-                  <b-form-invalid-feedback id="input-email">El Correo es obligatorio</b-form-invalid-feedback>
-                </b-col>
-                <b-col
-                  cols="12"
-                >
-                  <label>Mensaje</label>
-                  <b-form-textarea
-                    id="message"
-                    name="message"
-                    ref="message"
-                    v-model="form.message"
-                    @focus="focusNow = 'message'"
-                    :state="validateState('message', 'required')"
-                    placeholder="Mensaje..."
-                    rows="3"
-                    max-rows="6"
-                    aria-describedby="input-message"
-                    data-vv-as="Name"
-                  />
-                  <b-form-invalid-feedback id="input-message">El Mensaje es obligatorio</b-form-invalid-feedback>
-                </b-col>
-                <b-col
-                  cols="12"
-                >
-                  <b-button
-                    class="btn-contact"
-                    size="sm"
-                    variant="outline-success"
-                    type="submit"
-                    :disabled="statusOk"
-                  >
-                    {{ statusOk ? 'Mensaje enviado!' : 'Enviar mensaje!'}}
-                  </b-button>
-                </b-col>
-                <b-col cols="12" v-show="statusOk">
-                  <hr>
-                  <p class="text-whute">{{ statusOk ? 'Gracias, por comunicarte conmigo, estare en contacto contigo en el menor tiempo posible!' : 'El Mensaje fue enviado, intentalo mas tarde!'}}</p>
-                </b-col>
-              </b-row>
-              </b-form>
-          </b-card-text>
-        </b-card>
+              Contactar
+            </a>
+            <a
+              class="btn btn-success font-weight-bold text-uppercase text-light"
+              target="_blank"
+              href="https://drive.google.com/drive/folders/1HVi2A3V_UQnYDIzTOL00vQ0jY9rPTW_q?usp=sharing"
+            >
+              Ver CV
+            </a>
+          </div>
+        </div>
       </div>
-    </b-col>
+    </div>
   </b-row>
 </template>
 <script lang="ts">

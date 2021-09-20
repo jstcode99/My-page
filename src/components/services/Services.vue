@@ -174,7 +174,6 @@ export default {
             'Ayuda a la generación de ingresos.',
             'Fideliza a tus posibles clientes.',
             'Ahorro en costes de publicidad.',
-            'Ahorro en costes de publicidad.',
           ],
           whatsAppMessage: 'Hola!, Estoy interesado en el servicio de Diseño de Apps',
           popular: true,

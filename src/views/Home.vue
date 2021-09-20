@@ -1,6 +1,7 @@
 <template>
   <div class="home">
       <Landing></Landing>
+      <SwiperBrands></SwiperBrands>
       <About data-aos="fade-up"/>
       <Services data-aos="fade-right"></Services>
       <Gallery></Gallery>
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import SwiperBrands from '../components/SwiperBrands/SwiperBrands'
 import Landing from '../components/Landing/Landing'
 import Gallery from '../components/Gallery/Gallery.vue'
 import Services from '../components/services/Services.vue'
@@ -24,6 +26,7 @@ import Proyects from '@/components/Proyects/Proyects.vue'
 export default {
   name: 'Home',
   components: {
+    SwiperBrands,
     Landing,
     Gallery,
     Services,

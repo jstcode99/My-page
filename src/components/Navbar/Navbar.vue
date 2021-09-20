@@ -1,6 +1,6 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" variant="dark" type="dark" class="fixed-top" v-show="showNavbar" >
+  <b-navbar toggleable="lg" type="dark" class="fixed-top" v-show="showNavbar" >
     <b-navbar-brand href="/#home">
       <div class="text-monospace text-truncate">
         <b-img
