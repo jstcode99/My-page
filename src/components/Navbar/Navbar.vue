@@ -21,14 +21,14 @@
           <b-nav-item
             :class="isActive('home') ? 'active' : ''"
             @click="active = 'home'"
-            href="/#home"
+            to="/"
           >
             Inicio
           </b-nav-item>
           <b-nav-item
             :class="isActive('about') ? 'active' : ''"
             @click="active = 'about'"
-            href="/#perfil"
+            to="/perfil"
           >
             Perfil
           </b-nav-item>
@@ -42,14 +42,14 @@
           <b-nav-item
             :class="isActive('experiences') ? 'active' : ''"
             @click="active = 'experiences'"
-            href="/#experiencia"
+            to="/#experiencia"
           >
             Experiencia
           </b-nav-item>
           <b-nav-item
             :class="isActive('proyects') ? 'active' : ''"
             @click="active = 'proyects'"
-            href="#proyectos"
+            to="#proyectos"
           >
             Proyectos
           </b-nav-item>

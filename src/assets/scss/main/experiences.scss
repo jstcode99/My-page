@@ -1,5 +1,5 @@
 .experiences {
-  margin: 6rem 8rem 5rem 1rem;
+  margin-top: 5rem;
 }
 .b-card-dark {
   background-color: transparent !important;
@@ -49,16 +49,16 @@
 }
 @media only screen and (max-width: 600px) {
   .experiences {
-    margin: 5rem 1rem 1rem 1rem;
+    // margin: 5rem 1rem 1rem 1rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .experiences {
-    margin: 5rem;
+    // margin: 5rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .experiences {
-    margin: 9rem;
+    // margin: 9rem;
   }
 }

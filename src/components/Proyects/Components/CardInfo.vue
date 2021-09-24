@@ -60,7 +60,6 @@ export default {
     loading(newValue, oldValue) {
       if (newValue !== oldValue) {
         this.clearLoadingTimeInterval()
-
         if (newValue) {
           this.$_loadingTimeInterval = setInterval(() => {
             this.loadingTime++

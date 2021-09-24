@@ -15,6 +15,9 @@
 .info-box {
   padding: 1em 1em 1em 1em;
 }
+.icon-design::before {
+  content: "\ebb9";
+}
 @media (min-width: 1200px) {
   .row-tech .colum-tech:nth-child(1) {
     width: 50% !important;
@@ -45,6 +48,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  li svg {
+    color: $success;
+  }
 }
 .skills-list{
   padding: 0;
@@ -55,7 +61,10 @@
   }
 }
 .item-head {
-  color: $success;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: $white;
 }
 @media only screen and (max-width: 600px) {
   .console {

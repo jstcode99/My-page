@@ -1,5 +1,5 @@
 <template>
-  <div class="experiences" id="experiencia">
+  <div class="container experiences">
     <b-row>
       <b-col cols="12" xl="12">
         <h3 class="text-heading text-monospace">.Empresas para las que he desarrollado</h3>

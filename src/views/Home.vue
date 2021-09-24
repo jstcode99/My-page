@@ -2,7 +2,7 @@
   <div class="home">
       <Landing></Landing>
       <SwiperBrands></SwiperBrands>
-      <About data-aos="fade-up"/>
+      <About/>
       <Services data-aos="fade-right"></Services>
       <Gallery></Gallery>
       <Experiences data-aos="fade-dow"/>
@@ -11,29 +11,22 @@
 </template>
 
 <script>
-import SwiperBrands from '../components/SwiperBrands/SwiperBrands'
 import Landing from '../components/Landing/Landing'
-import Gallery from '../components/Gallery/Gallery.vue'
-import Services from '../components/services/Services.vue'
-// @ is an alias to /src
-// import Brandname from '@/components/BrandName/BrandName.vue'
-// import Cardlanding from '@/components/CardLanding/Cardlanding.vue'
-// import Animations from '../components/animations/animations.vue'
+import SwiperBrands from '../components/SwiperBrands/SwiperBrands'
 import About from '@/components/About.vue'
+import Services from '../components/Services/Services.vue'
+import Gallery from '../components/Gallery/Gallery.vue'
 import Experiences from '@/components/Experiences.vue'
 import Proyects from '@/components/Proyects/Proyects.vue'
 
 export default {
   name: 'Home',
   components: {
-    SwiperBrands,
     Landing,
-    Gallery,
-    Services,
-    // Brandname,
-    // Cardlanding,
-    // Animations,
+    SwiperBrands,
     About,
+    Services,
+    Gallery,
     Experiences,
     Proyects,
   }

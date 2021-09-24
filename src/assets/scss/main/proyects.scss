@@ -1,11 +1,10 @@
 .proyects {
-
+  margin-top: 5rem;
 }
-
 .continer-section-proyect {
   position: relative;
   display: grid;
-  margin: 1rem 0rem 5rem 0rem;
+  margin-top: 5rem;
   gap: 10px;
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
@@ -126,12 +125,8 @@
 }
 
 @media (max-width: 320px) {
-  .continer-section-proyect {
-    margin: 0.1rem;
-    display: inherit;
-  }
   .continer-gallery {
-    margin: 2rem 1rem 5rem 0rem;
+    // margin: 2rem 1rem 5rem 0rem;
     .column-gallery {
       flex: 100%;
       max-width: 100%;
@@ -145,28 +140,12 @@
   .continer-section-proyect {
     display: inherit;
   }
-  .proyects {
-    margin: 5rem 1rem 1rem 1rem;
-  }
   .img-presentation-proyect {
     mix-blend-mode: normal !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  .proyects {
-    margin: 1rem;
-  }
   .img-presentation-proyect {
     mix-blend-mode: normal !important;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .proyects {
-    margin: 9rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .continer-section-proyect {
-    margin: 0rem;
   }
 }

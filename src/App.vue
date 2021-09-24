@@ -1,15 +1,18 @@
 <template>
-  <div>
-      <navbar />
+  <div class="app">
+      <Navbar />
       <router-view/>
-      <floting-vertical-links v-bind:links="linksSocialIcons" v-bind:orientation="orientationSocialIcons"/>
-      <floting-vertical-links v-bind:links="linksWebPage" v-bind:orientation="orientationWebPage"/>
+      <FlotingVerticalLinks :links="linksSocialIcons" :orientation="orientationSocialIcons"/>
+      <FlotingVerticalLinks :links="linksWebPage" v-bind:orientation="orientationWebPage"/>
+      <Footer :links="linksSocialIcons" />
   </div>
   <!-- <Animations img="astronaut" ></Animations> -->
 </template>
 <script>
 import Navbar from '@/components/Navbar/Navbar.vue'
 import FlotingVerticalLinks from '@/components/FlotingVerticalLinks/FlotingVerticalLinks.vue'
+import Footer from '@/components/Footer/Footer.vue'
+
 // import Animations from '../components/animations/animations'
 
 export default {
@@ -17,6 +20,7 @@ export default {
     components: {
     Navbar,
     FlotingVerticalLinks,
+    Footer,
     // Animations,
   },
   data() {

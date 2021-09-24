@@ -1,21 +1,16 @@
-#contacto {
+.img-parallax {
   /* The image used */
   background-image: url('assets/img/animations/parallax.png');
-
-  /* Set a specific height */
-  min-height: 780px;
-  max-height: 1080px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:50rem;
+	position: relative
 }
 .background-overlay {
   height: 100%;
   width: 100%;
-  top: 0;
   left: 0;
   position: absolute;
   background-color: transparent;
@@ -62,7 +57,7 @@
 }
 @media only screen and (max-width: 600px) {
   .title-brand {
-    // margin: 7rem 1rem 0rem 1rem;
+    margin-top: 9rem;
     // box-sizing: inherit !important
   }
   .title__text {
@@ -70,9 +65,16 @@
     margin-bottom: 1.4rem;
   }
   .title__subtext {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1;
     letter-spacing: 0.1em;
+  }
+  .subtitle__text {
+    font-size: 1rem !important;
+  }
+  .background-overlay{
+    display: flex;
+    position: relative;
   }
 }
 
@@ -87,7 +89,7 @@
     margin-bottom: 1.6rem;
   }
   .title__subtext {
-    font-size: 1.4rem;
+    font-size: 1.1rem !important;
     line-height: 1;
     letter-spacing: 0.1em;
   }

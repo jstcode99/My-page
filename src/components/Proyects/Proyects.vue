@@ -1,5 +1,5 @@
 <template>
-  <div class="proyects">
+  <div class="container proyects">
     <b-row>
       <b-col cols="12">
         <h3 class="text-heading text-monospace text-success" id="proyectos">.Proyectos desarrollados</h3>
