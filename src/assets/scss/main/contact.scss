@@ -1,0 +1,142 @@
+.img-space {
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  overflow: hidden;
+  z-index: -999;
+}
+.container-card {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+.footer-distributed {
+  background: transparent !important;
+}
+.container-contact {
+  // position: absolute;
+  overflow: hidden;
+  margin-top: 8rem;
+}
+.form-contac {
+  background: $dark;
+  label {
+    color: $success !important;
+  }
+  textarea{
+    overflow-y: hidden !important;
+    background: transparent !important;
+    display: block;
+    width: 100%;
+    border: 0;
+    color: $success;
+    border-radius: 0;
+  }
+  .full-row-field {
+    display: flex;
+    align-content: center !important;
+    width: 100%;
+  }
+  .arrow-right::after{
+    color: $pink;
+    margin-top: 8px;
+    margin-right: 8px;
+    content: "→"
+  }
+  .form-control{
+    flex: 1 !important;
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    overflow-y: hidden;
+    padding: 0px !important;
+    height: auto;
+    background: transparent !important;
+  }
+  .form-control:focus {
+    color: $success;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0;
+  }
+  .form-control.is-valid {
+    border: 0 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .form-control.is-invalid {
+    border: 0 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: $pink !important;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  .btn-contact {
+    margin-top: 2.2rem !important;
+  }
+  .two-lines {
+    line-height: 1.5em;
+    height: 6em;
+    font-style: italic;
+    max-width: 210px;
+    overflow: hidden;
+  }
+}
+.stars-bg-stars {
+  z-index: -200;
+  width: 1.80px;
+  height: 1.22px;
+  box-shadow: 819px 223px rgba(255,255,255,.2), 1778px 1582px #FFF, 1703px 239px #FFF, 1056px 1927px #FFF, 712px 1373px #FFF, 381px 705px #FFF, 961px 1339px #FFF, 398px 1817px #FFF, 1684px 1342px #FFF, 1416px 278px #FFF, 1549px 1593px #FFF, 936px 350px #FFF, 70px 1531px #FFF, 115px 770px #FFF, 1679px 63px #FFF, 365px 1944px #FFF, 1796px 1365px #FFF, 89px 1729px #FFF, 252px 969px #FFF, 807px 938px #FFF, 1867px 230px #FFF, 893px 1371px #FFF, 585px 1560px #FFF, 1106px 1512px #FFF, 1893px 1164px #FFF, 1838px 896px #FFF, 847px 1579px #FFF, 1626px 683px #FFF, 1143px 942px #FFF, 1351px 1703px #FFF, 425px 1042px #FFF, 1715px 1522px #FFF, 424px 1788px #FFF, 336px 1133px #FFF, 1635px 819px #FFF, 1877px 1050px #FFF, 1634px 796px #FFF, 1432px 1433px #FFF, 1414px 1493px #FFF, 1527px 454px #FFF, 1094px 309px #FFF, 1414px 1622px #FFF, 922px 923px #FFF, 1208px 503px #FFF, 1237px 1781px #FFF, 966px 1777px #FFF, 950px 855px #FFF, 867px 368px #FFF, 232px 1378px #FFF, 1925px 633px #FFF, 133px 1522px #FFF, 1046px 1680px #FFF, 1492px 700px #FFF, 1587px 1020px #FFF, 1159px 798px #FFF, 1811px 1852px #FFF, 585px 1319px #FFF, 549px 1625px #FFF, 1829px 1669px #FFF, 1011px 1150px #FFF, 432px 1241px #FFF, 1145px 499px #FFF, 427px 1868px #FFF, 1994px 507px #FFF, 1955px 1831px #FFF, 818px 1064px #FFF, 959px 1482px #FFF, 1535px 1768px #FFF, 1150px 1160px #FFF, 1292px 1926px #FFF;
+  animation: animStar 20s linear infinite;
+}
+.stars-bg-stars-2 {
+  width: 2px;
+  height: 2px;
+  box-shadow: 552px 639px rgba(255,255,255,.2), 1652px 507px #FFF, 1967px 1314px #FFF, 1071px 1461px #FFF, 1117px 582px #FFF, 909px 1357px #FFF, 498px 821px #FFF, 876px 1151px #FFF, 1059px 317px #FFF, 1404px 1279px #FFF, 1867px 308px #FFF, 1619px 438px #FFF, 1479px 1473px #FFF, 325px 1891px #FFF, 1827px 338px #FFF, 1696px 1311px #FFF, 11px 1578px #FFF, 1789px 193px #FFF, 298px 795px #FFF, 1518px 1615px #FFF;
+  animation: animStar 30s linear infinite;
+}
+.stars-bg-stars-3 {
+  width: 3px;
+  height: 3px;
+  box-shadow: 78px 529px rgba(255,255,255,.2), 1694px 1199px #FFF, 146px 1314px #FFF, 37px 622px #FFF, 268px 1813px #FFF, 1118px 83px #FFF, 1796px 1609px #FFF, 1432px 1496px #FFF, 1641px 107px #FFF, 487px 1564px #FFF;
+  animation: animStar 10s linear infinite;
+}
+@-webkit-keyframes animStar {
+  from { 
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px)
+  }
+}
+@keyframes animStar {
+  from { 
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px)
+  }
+}
+
+.bg-gray-dark-mktg {
+  background-color: #040d21;
+}
+.signup-content-container {
+  background: $dark;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: 25%;
+  border: 1px solid $pink;
+  outline: 2px dashed $success;
+  outline-offset: 3px;
+  border-radius: 12px;
+}

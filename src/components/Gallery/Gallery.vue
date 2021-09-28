@@ -52,15 +52,15 @@ export default {
       gallerys: [
         {
           Caption: 'Diseño Paginas Web',
-          img: require('@/assets/img/gallery/Apps.webp'),
+          img: require('@/assets/img/gallery/Diseño Web.webp'),
         },
         {
-          Caption: 'Diseño de Apps',
-          img: require('@/assets/img/gallery/Pagina-Empresarial.webp'),
+          Caption: 'Diseño de Sistema',
+          img: require('@/assets/img/gallery/Diseño Sistema.webp'),
         },
         {
           Caption: 'Diseño de UI & UX',
-          img: require('@/assets/img/gallery/UiUx.webp'),
+          img: require('@/assets/img/gallery/Diseño UIUX.webp'),
         },
       ],
     }

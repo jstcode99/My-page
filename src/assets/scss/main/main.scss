@@ -8,6 +8,8 @@
 @import '@/assets/scss/main/experiences.scss';
 @import '@/assets/scss/main/proyects.scss';
 @import '@/assets/scss/main/typewriting.scss';
+@import '@/assets/scss/main/swiperbrands.scss';
+@import '@/assets/scss/main/contact.scss';
 @import '@/assets/scss/main/footer.scss';
 
 
@@ -23,6 +25,7 @@ html{
 body{
   background: #000000;
   overflow-x: hidden;
+  font-family: $font-family;
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -66,6 +69,14 @@ body::-webkit-scrollbar-thumb {
 .card-services {
   background: $dark !important;
   border-radius: 0.9rem
+}
+@media only screen and (max-width: 600px) {
+  .carousel-inner .carousel-item {
+    min-height: 15rem;
+  }
+  .carousel-inner .carousel-item img{
+    min-height: 15rem;
+  }
 }
 @media (max-width: 1080px) {
   .text-heading::after {

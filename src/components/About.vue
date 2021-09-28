@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-      <div class="row-tech">
+      <div class="row-tech" data-aos="fade-down">
         <div
           class="colum-tech"
-          data-aos="fade-left"
         >
           <div class="content-tech">
             <h2 class="text-success">Recorrido</h2>
@@ -12,7 +11,6 @@
         </div>
         <div
           class="colum-tech"
-          data-aos="fade-right"
         >
           <div class="row-tech">
             <div

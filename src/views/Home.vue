@@ -1,21 +1,21 @@
 <template>
   <div class="home">
-      <Landing></Landing>
-      <SwiperBrands></SwiperBrands>
-      <About/>
-      <Services data-aos="fade-right"></Services>
-      <Gallery></Gallery>
-      <Experiences data-aos="fade-dow"/>
-      <Proyects data-aos="fade-up"/>
+    <Landing></Landing>
+    <About/>
+    <Services data-aos="fade-right"></Services>
+    <Gallery></Gallery>
+    <Experiences data-aos="fade-dow"/>
+    <Proyects data-aos="fade-up"/>
+    <!-- 
+    -->
   </div>
 </template>
 
 <script>
-import Landing from '../components/Landing/Landing'
-import SwiperBrands from '../components/SwiperBrands/SwiperBrands'
+import Landing from '@/components/Landing/Landing'
 import About from '@/components/About.vue'
-import Services from '../components/Services/Services.vue'
-import Gallery from '../components/Gallery/Gallery.vue'
+import Services from '@/components/Services/Services.vue'
+import Gallery from '@/components/Gallery/Gallery.vue'
 import Experiences from '@/components/Experiences.vue'
 import Proyects from '@/components/Proyects/Proyects.vue'
 
@@ -23,7 +23,6 @@ export default {
   name: 'Home',
   components: {
     Landing,
-    SwiperBrands,
     About,
     Services,
     Gallery,

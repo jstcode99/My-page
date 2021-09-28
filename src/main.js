@@ -12,7 +12,9 @@ import VueCompositionAPI from '@vue/composition-api'
 import Vuelidate from 'vuelidate'
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'vue-awesome-swiper/node_modules/swiper/dist/css/swiper.css'
+
+
+import 'swiper/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper)
 

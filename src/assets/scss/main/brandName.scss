@@ -1,6 +1,6 @@
 .img-parallax {
   /* The image used */
-  background-image: url('assets/img/animations/parallax.png');
+  background-image: url('assets/img/animations/parallax.webp');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -12,6 +12,10 @@
   height: 100%;
   width: 100%;
   left: 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   background-color: transparent;
   background-image: linear-gradient(180deg, #0000007A 0%, #000000 100%);
@@ -56,6 +60,9 @@
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
+  .img-parallax{
+    height:40rem;
+  }
   .title-brand {
     margin-top: 9rem;
     // box-sizing: inherit !important
@@ -114,8 +121,8 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .title-brand {
-    // margin: 14rem 0rem 0rem 5rem;
+  .img-parallax{
+    height:40rem;
   }
   .title__text {
     font-size: 4rem;
@@ -130,9 +137,8 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .title-brand {
-    // margin-top: 13rem;
-    // right: 9%;
+  .img-parallax{
+    height:52rem;
   }
   .title__text {
     font-size: 5rem !important;

@@ -15,26 +15,6 @@
     transform: rotate(70deg);
   }
 }
-.form-contac {
-  textarea{
-    overflow-y: hidden !important;
-  }
-  .form-control{
-    border: 0;
-    background-color: #0c162d;
-    overflow-y: hidden;
-  }
-  .form-control:focus {
-    color: #495057;
-    background-color: #0a192f;
-    border-color: transparent !important;
-    outline: 0;
-    box-shadow: 0;
-  }
-  .btn-contact {
-    margin-top: 2.2rem !important;
-  }
-}
 .title__cardlanding {
   font-size: 2rem;
   line-height: 0.9;

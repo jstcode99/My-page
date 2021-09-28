@@ -18,6 +18,23 @@
 .icon-design::before {
   content: "\ebb9";
 }
+.cut-line {
+  outline: 2px dashed $success;
+  outline-offset: 3px;
+  width: 50%;
+}
+.subtitle-profile {
+  font-size: 2rem;
+  line-height: 1.1em;
+  font-weight: 700;
+  text-shadow: #101721;
+}
+.title-swiper-brand{
+  font-size: 2.5rem;
+  line-height: 1.1em;
+  font-weight: 700;
+  text-shadow: #101721;
+}
 @media (min-width: 1200px) {
   .row-tech .colum-tech:nth-child(1) {
     width: 50% !important;
@@ -27,11 +44,14 @@
   }
 }
 @media (min-width: 768px) {
-  .row-tech colum-tech:nth-child(1) {
-    width: 45%;
-  }
-  .row-tech colum-tech:nth-child(2) {
-    width: 55% !important;
+  .row-tech {
+    display: flex;
+    flex-direction: row;
+    box-sizing: inherit;
+    justify-content: center;
+    align-items: center;
+    align-content: center !important;
+    flex-wrap: wrap
   }
 }
 .info-box:focus, .info-box:hover {

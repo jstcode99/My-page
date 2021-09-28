@@ -39,20 +39,6 @@
           >
             Contacto
           </b-nav-item>
-          <b-nav-item
-            :class="isActive('experiences') ? 'active' : ''"
-            @click="active = 'experiences'"
-            to="/#experiencia"
-          >
-            Experiencia
-          </b-nav-item>
-          <b-nav-item
-            :class="isActive('proyects') ? 'active' : ''"
-            @click="active = 'proyects'"
-            to="#proyectos"
-          >
-            Proyectos
-          </b-nav-item>
         </b-navbar-nav>
       </b-navbar-nav>
     </b-collapse>
