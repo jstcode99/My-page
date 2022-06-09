@@ -1,0 +1,53 @@
+.navbar-app {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  margin: 35px 19px 20px -40px;
+}
+
+.navbar-app a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-app a:hover {
+  background-color: #3e3e3e;
+  color: black;
+}
+
+.navbar-app a.active {
+  color: #17FAEC;
+}
+
+.navbar-app .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-app a:not(:first-child) {display: none;}
+  .navbar-app a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-app.responsive {position: relative;}
+  .navbar-app.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-app.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

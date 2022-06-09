@@ -1,0 +1,76 @@
+.sidebar-app {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #181818;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sidebar-app-brand {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+}
+.sidebar-app-brand-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.sidebar-app-brand h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+.sidebar-app-menu {
+  margin-top: 5rem;
+}
+.sidebar-app a {
+  display: block;
+  color: #FFFFFF;
+  padding: 21px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border-top: 1px solid #1D1D1D;
+  border-bottom: 1px solid #1D1D1D;
+}
+ 
+.sidebar-app a.active {
+  color: #17FAEC;
+}
+
+.sidebar-app a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar-app {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar-app a {float: left;}
+  .body-app {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar-app a {
+    text-align: center;
+    float: none;
+  }
+}
