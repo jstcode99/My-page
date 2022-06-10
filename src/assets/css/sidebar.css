@@ -1,14 +1,15 @@
 .sidebar-app {
-  position: fixed;
-  margin: 0;
-  padding: 0;
   width: 200px;
-  background-color: #181818;
-  height: 100%;
-  overflow: auto;
+  height: 100vh;
   display: flex;
+  background-color: #181818;
   flex-direction: column;
   align-content: center;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0rem;
+  z-index: 1000;
 }
 
 .sidebar-app-brand {
@@ -20,6 +21,7 @@
   align-items: center;
   background-color: #000000;
 }
+
 .sidebar-app-brand-logo {
   display: flex;
   justify-content: center;
@@ -28,6 +30,7 @@
   align-items: center;
   margin-top: 2rem;
 }
+
 .sidebar-app-brand h1 {
   color: #FFFFFF;
   text-align: center;
@@ -35,9 +38,11 @@
   font-size: 18px;
   font-weight: 400;
 }
+
 .sidebar-app-menu {
   margin-top: 5rem;
 }
+
 .sidebar-app a {
   display: block;
   color: #FFFFFF;
@@ -63,9 +68,10 @@
     width: 100%;
     height: auto;
     position: relative;
+    display: none;
   }
-  .sidebar-app a {float: left;}
-  .body-app {margin-left: 0;}
+  .sidebar-app a { float: left; }
+  .body-app { margin-left: 0; }
 }
 
 @media screen and (max-width: 400px) {

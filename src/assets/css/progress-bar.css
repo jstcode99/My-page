@@ -6,7 +6,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .progress-bar {
@@ -22,10 +22,10 @@
   position: relative;
   padding: 0 0 14px 0;
   font-size: var(--font-size-default);
-  line-height: 1.5;
+  line-height: 1;
   color: var(--color-blue-dark);
   font-weight: 600;
-  white-space: nowrap;
+  white-space: unset;
   overflow: visible;
   min-width: 0;
   text-align: center;
@@ -60,6 +60,7 @@
   left: auto;
 }
 .progress-bar span {
+  text-emphasis: 20px;
   transition: opacity .3s ease-in-out;
 }
 .progress-bar li:not(.is-active) span {

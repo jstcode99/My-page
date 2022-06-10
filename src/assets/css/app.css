@@ -10,16 +10,29 @@
   --color-blue-dark: #28b3aa;
   --font-size-small: .75rem;
   --font-size-default: .875rem;
+  --sm: 540px;
+  --md: 720px;
+  --lg: 960px;
+  --xl: 1140px;
+  --xxl: 1320px;
 }
+
 body {
   margin: 0;
   background-color: var(--color-black);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-white);
 }
+.app {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }
+
 body::-webkit-scrollbar-track {
   background-color: var(--color-black);
   border-radius: 100px;
@@ -35,25 +48,46 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body-app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   position: absolute;
-  margin: 180px 100px 0px 300px;
-  padding: 1px 16px;
-  height: 100%;
-  display: grid;  
-  grid-gap: 5px;  
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(2, 100px);  
 }
 
-/** Home page */
+.body-app > :first-child {
+  flex-grow: 1;
+}
+
+.body-app > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+  
+.content-app {
+  display: flex;
+}
+.container {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container, .fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/***** !-- Start Home Page --! *****/
 
 .home {
+  height: auto;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   align-items: flex-start;
-  padding: 12rem 0rem 0px 10rem;
 }
 
 .title-home {
@@ -80,57 +114,124 @@ body::-webkit-scrollbar-thumb {
   color: var(--color-blue);
 }
 
-/** Home page */
+/***** !-- End Home Page --! *****/
 
-/** About page */
+/***** !-- Start About Page --! *****/
 
 .about {
+  display: flex;
+  gap: 20px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.section-about-me {
-  display: flex;
-  flex-wrap: wrap;
+.about > :first-child {
+  flex-grow: 1;
 }
 
-.section-skills-exp {
+.about > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+
+.section-about {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-skills {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 60px;
 }
 
 .title-about {
-  width: 100%;
   text-align: left;
   font-size: 3rem;
   font-weight: bold;
-  color: var(--color-white);
-  line-height: 7rem;
-  margin: 0;
+  color: var(--color-blue);
   padding: 0;
+  margin: 0;
 }
 
 .subtitle-about {
-  width: 100%;
   text-align: right;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--color-white);
-  line-height: 7rem;
-  margin: 0;
+  color: var(--color-blue);
   padding: 0;
+  margin: 0;
 }
 
-/** About page */
+/***** !-- End About Page --! *****/
 
+
+/***** !-- Start Work Page --! *****/
+.work {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgba(10, 239, 255, 0.79); */
+}
+.row-gallery {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column-gallery img {
+  vertical-align: middle;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.1;
+  font: normal normal 16px/20px "Open Sans", Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: background 150ms ease-out;
+  -o-transition: background 150ms ease-out;
+  transition: background 150ms ease-out;
+  width: 100%;
+}
+.column-gallery img {
+  transition: transform .2s;
+}
+
+.column-gallery img:hover {
+  transform: scale(0.98);
+  opacity: 1;
+  border: 1px solid var(--color-blue);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/***** !-- End Work Page --! *****/
 .btn {
   padding: 1rem 4rem;
   border: 2px;
@@ -219,4 +320,33 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
   font-size: 25rem;
   color: var(--color-gray);
+}
+
+
+@media screen and (max-width: 700px) {
+  .body-app{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+  }
+  .home {
+    padding: 0px;
+    align-items: center;
+  }
+  .title-home {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .subtext-home {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
 }
