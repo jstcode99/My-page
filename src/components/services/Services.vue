@@ -138,6 +138,7 @@
 <script>
 /* eslint-disable global-require */
 export default {
+  name: 'Services',
   data() {
     return {
       phoneWhatsApp: '573168314191',

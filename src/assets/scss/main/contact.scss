@@ -21,7 +21,7 @@
   margin-top: 8rem;
 }
 .form-contac {
-  background: $dark;
+  // background: $dark;
   label {
     color: $success !important;
   }
@@ -35,6 +35,8 @@
     border-radius: 0;
   }
   .full-row-field {
+    margin-top: 2px;
+    margin-bottom: 5px;
     display: flex;
     align-content: center !important;
     width: 100%;
@@ -129,14 +131,14 @@
   background-color: #040d21;
 }
 .signup-content-container {
-  background: $dark;
+  // background: $dark;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   top: 25%;
-  border: 1px solid $pink;
-  outline: 2px dashed $success;
+  // border: 1px solid $pink;
+  // outline: 2px dashed $success;
   outline-offset: 3px;
   border-radius: 12px;
 }
